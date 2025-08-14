@@ -1,0 +1,8 @@
+file_format: "1"
+id: glowpad
+name: Glowpad
+type: shield
+url: https://github.com/lordbagel42/glowpad
+requires: [pro_micro]
+features:
+  - keys
