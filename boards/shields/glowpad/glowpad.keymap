@@ -9,7 +9,7 @@
 			// |     A     |     B     |     C     |
 			// |     D     |     E     |     F     |
 			bindings = <
-			&kp LCTRL+Z &kp LCTRL+Y  &kp C_VOL_UP
+			&kp LCTRL(Z) &kp LCTRL(Y)  &kp C_VOL_UP
 			&kp C_PREV  &kp C_NEXT   &kp C_VOL_DN
 			&kp ESCAPE  &kp DEL      &kp C_PLAY_PAUSE
 			>;
