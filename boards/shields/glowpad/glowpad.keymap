@@ -11,7 +11,7 @@
 		#binding-cells = <0>;
 		tapping-term-ms = <500>;// Time window for triple tap
 		bindings = <&kp C_VOL_DN>,// Single tap behavior (your original key)
-		<&kp LCTRL+L>,// Double tap (do nothing special)
+		<&none>,// Double tap (do nothing special)
 		<&bootloader>;// Triple tap → enter bootloader
 	};
 };
@@ -25,7 +25,7 @@
 			// |     A     |     B     |     C     |
 			// |     D     |     E     |     F     |
 			bindings = <
-			&kp LCTRL+Z &kp LCTRL+Y &kp C_VOL_UP
+			&kp LCTRL+Z &kp LCTRL+Y  &kp C_VOL_UP
 			&kp C_PREV  &kp C_NEXT   &td_bootloader
 			&kp ESCAPE  &kp DEL      &kp C_PLAY_PAUSE
 			>;
