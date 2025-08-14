@@ -4,14 +4,14 @@
 	keymap {
 		compatible = "zmk,keymap";
 		
-		default_layer {// Layer 0-------
-			// |     Z     |     M     |     K     |
-			// |     A     |     B     |     C     |
-			// |     D     |     E     |     F     |
+		default_layer {
+			// |      Z      |      M      |      K      |
+			// |      A      |      B      |      C      |
+			// |      D      |      E      |      F      |
 			bindings = <
-			&kp LC(Z)  &kp LC(Y)  &kp C_VOL_UP
-			&kp C_PREV &kp C_NEXT &kp C_VOL_DN
-			&kp ESCAPE &kp DEL    &kp C_PLAY_PAUSE
+			&kp LC(Z)    &kp LC(Y)    &mc C_VOL_UP
+			&mc C_PREV   &mc C_NEXT   &mc C_VOL_DN
+			&kp ESC      &kp DELETE   &mc C_PLAY_PAUSE
 			>;
 		};
 	};
