@@ -1,20 +1,4 @@
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
-&bootloader {
-	label = "Bootloader";
-};
-
-&behaviors {
-	td_bootloader: td_bootloader {
-		compatible = "zmk,behavior-tap-dance";
-		#binding-cells = <0>;
-		tapping-term-ms = <500>;// Time window for triple tap
-		bindings = <&kp C_VOL_DN>,// Single tap behavior (your original key)
-		<&none>,// Double tap (do nothing special)
-		<&bootloader>;// Triple tap → enter bootloader
-	};
-};
 
 / {
 	keymap {
@@ -26,7 +10,7 @@
 			// |     D     |     E     |     F     |
 			bindings = <
 			&kp LCTRL+Z &kp LCTRL+Y  &kp C_VOL_UP
-			&kp C_PREV  &kp C_NEXT   &td_bootloader
+			&kp C_PREV  &kp C_NEXT   &kp C_VOL_DN
 			&kp ESCAPE  &kp DEL      &kp C_PLAY_PAUSE
 			>;
 		};
